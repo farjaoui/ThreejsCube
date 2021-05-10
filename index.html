@@ -48,6 +48,8 @@
      function render(){
         requestAnimationFrame(render);
         renderer.render(scene,camera);
+        cube.rotate.x+=0.1;
+        cube.rotate.y+=0.1;
         update();
     }
     function init(){
