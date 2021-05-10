@@ -46,8 +46,6 @@
         
     });
      function render(){
-        cube.rotate.x+=0.1;
-        cube.rotate.y+=0.1;
         requestAnimationFrame(render);
         renderer.render(scene,camera);
         update();
@@ -72,6 +70,8 @@
      
     }
      function update()  {
+                 cube.rotate.x+=0.1;
+        cube.rotate.y+=0.1;
          if(pressed==true){
          if(right){
              cube.rotation.y+=0.1;
