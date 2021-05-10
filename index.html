@@ -46,10 +46,10 @@
         
     });
      function render(){
-        requestAnimationFrame(render);
-        renderer.render(scene,camera);
         cube.rotate.x+=0.1;
         cube.rotate.y+=0.1;
+        requestAnimationFrame(render);
+        renderer.render(scene,camera);
         update();
     }
     function init(){
